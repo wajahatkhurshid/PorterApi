@@ -1,0 +1,73 @@
+{
+  "parentSubscriptionId": 0,
+  "name": "Porter Work Scope",
+  "enabled": false,
+  "offsetDate": "2000-09-01T12:28:28.923Z",
+  "businessObjectScope": {
+    "businessObjectName": "WorkBusinessObject",
+    "resolvableScopeNodes": [
+      {
+        "technicalName": "WorkContributorAuthor"
+      },
+      {
+        "technicalName": "WorkCollectionTitle"
+      },
+      {
+        "technicalName": "Product"
+      },
+      {
+        "technicalName": "Merchandise"
+      },
+      {
+        "technicalName": "WorkReviews",
+        "resolvedObject": {
+          "businessObjectName": "ReviewBusinessObject",
+          "resolvableScopeNodes": [],
+          "metadataScopeNodes": [
+            { "metadataTechnicalName": "ReviewMedia" },
+            { "metadataTechnicalName": "ReviewRating" },
+            { "metadataTechnicalName": "ReviewWrittenBy" },
+            { "metadataTechnicalName": "ReviewContent" }
+          ],
+          "phaseScopeNodes": []
+        }
+      }
+    ],
+    "metadataScopeNodes": [
+      { "metadataTechnicalName": "WorkIdentificationNumber" },
+      { "metadataTechnicalName": "WorkTitle" },
+      { "metadataTechnicalName": "WorkSubtitle" },
+      { "metadataTechnicalName": "WorkContributorNoAuthor" },
+      { "metadataTechnicalName": "WorkCollectionPartNumber" },
+      { "metadataTechnicalName": "WorkProjectType" },
+      { "metadataTechnicalName": "WorkImprint" },
+      { "metadataTechnicalName": "WorkLanguageCode" },
+      { "metadataTechnicalName": "RelatedProductOriginalWorkTitle" },
+      { "metadataTechnicalName": "RelatedProductOriginalWorkLanguageCode" },
+      { "metadataTechnicalName": "RelatedProductOriginalWorkPublisher" },
+      { "metadataTechnicalName": "RelatedProductFirstEditionWorkTitle" },
+      { "metadataTechnicalName": "RelatedProductFirstEditionWorkPublishedDate" },
+      { "metadataTechnicalName": "WorkEditorialDivision" },
+      { "metadataTechnicalName": "WorkManagingEditor" },
+      { "metadataTechnicalName": "WorkOriginalEditorialResponsible" },
+      { "metadataTechnicalName": "WorkCurrentEditorialResponsible" },
+      { "metadataTechnicalName": "WorkMarketingResponsible" },
+      { "metadataTechnicalName": "WorkContactResponsible" },
+      { "metadataTechnicalName": "WorkGUInternetSubject" },
+      { "metadataTechnicalName": "WorkEducationSubjectLevel" },
+      { "metadataTechnicalName": "WorkSubjectCodeMain" },
+      { "metadataTechnicalName": "WorkSubjectCode" },
+      { "metadataTechnicalName": "WorkAudienceRange" },
+      { "metadataTechnicalName": "WorkWebText" },
+      { "metadataTechnicalName": "WorkGyldendalShopText" },
+      { "metadataTechnicalName": "WorkInternalText" },
+      { "metadataTechnicalName": "WorkRightsTransferredTo" },
+      { "metadataTechnicalName": "WorkDecommissionDate" },
+      { "metadataTechnicalName": "WorkContributor" },
+      { "metadataTechnicalName": "WorkFunding" },
+      { "metadataTechnicalName": "WorkBusinessIntelligenceTrackingTaxonomies" },
+      { "metadataTechnicalName": "WorkBusinessIntelligenceTrackingTags" }
+    ],
+    "phaseScopeNodes": []
+  }
+}

@@ -1,0 +1,14 @@
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.deps.json
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.csproj.AssemblyReference.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.AssemblyInfoInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.AssemblyInfo.cs
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.csproj.CoreCompileInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.csproj.CopyComplete
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.WorkReview\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.WorkReview.pdb

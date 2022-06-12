@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AXStockUpdateJob.cs~RF23748480.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Console" Version="1.4.2" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.24" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Porter.Application.Services\Gyldendal.Porter.Application.Services.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Common\Gyldendal.Porter.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Domain.Contracts\Gyldendal.Porter.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Infrastructure.ExternalClients\Gyldendal.Porter.Infrastructure.ExternalClients.csproj" />
+  </ItemGroup>
+
+</Project>

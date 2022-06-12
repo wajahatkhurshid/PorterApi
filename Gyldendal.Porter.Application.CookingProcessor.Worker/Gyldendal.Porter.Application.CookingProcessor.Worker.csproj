@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-Gyldendal.Porter.Application.CookingProcessor.Worker-6F84F076-470E-4054-9BD1-45E09095F293</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PreserveOriginalQueueAttribute.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Core" Version="1.7.24" />
+    <PackageReference Include="Hangfire.Mongo" Version="0.7.22" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Porter.Application.Configuration\Gyldendal.Porter.Application.Configuration.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Application.Services\Gyldendal.Porter.Application.Services.csproj" />
+  </ItemGroup>
+</Project>

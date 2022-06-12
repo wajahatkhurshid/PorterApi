@@ -1,0 +1,16 @@
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.deps.json
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.csproj.AssemblyReference.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.AssemblyInfoInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.AssemblyInfo.cs
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.csproj.CoreCompileInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.csproj.CopyComplete
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.ExternalClients.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.ExternalClients\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.pdb

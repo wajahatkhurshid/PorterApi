@@ -1,0 +1,15 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\wajahat.khurshid\.nuget\packages\gyldendal.loggingmanager\2.4.2\lib\netcoreapp3.1\Gyldendal.LoggingManager.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\wajahat.khurshid\.nuget\packages\bogus\33.1.1\lib\netstandard2.0\Bogus.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b4a9b925_002D6848_002D44d1_002D8f84_002D6ff720d80eaa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CookProduct" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::59899C21-1801-46F2-93E6-7BA57A0158B6::.NETCoreApp,Version=v3.1::Gyldendal.Porter.Tests.IntegrationTests.Cooked.CookProductCommandHandlerTests.CookProduct&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=df736361_002De44d_002D4ba6_002D9470_002Dde4f5649322f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CookProduct #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::59899C21-1801-46F2-93E6-7BA57A0158B6::.NETCoreApp,Version=v3.1::Gyldendal.Porter.Tests.IntegrationTests.Cooked.CookProductCommandHandlerTests.CookProduct&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

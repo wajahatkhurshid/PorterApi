@@ -1,0 +1,21 @@
+{
+  "parentSubscriptionId": 0,
+  "name": "Porter Series Scope",
+  "enabled": false,
+  "offsetDate": "2000-09-01T12:28:28.923Z",
+  "businessObjectScope": {
+    "businessObjectName": "SeriesBusinessObject",
+    "resolvableScopeNodes": [
+      {
+        "technicalName": "SeriesSubseries"
+      }
+    ],
+    "metadataScopeNodes": [
+      { "metadataTechnicalName": "SeriesTitle" },
+      { "metadataTechnicalName": "SeriesInternetSubject" },
+      { "metadataTechnicalName": "SeriesDescription" },
+      { "metadataTechnicalName": "SeriesSerieSystemFlag" }
+    ],
+    "phaseScopeNodes": []
+  }
+}

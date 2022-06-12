@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Attachment.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Porter.Application.Contracts\Gyldendal.Porter.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Common\Gyldendal.Porter.Common.csproj" />
+  </ItemGroup>
+
+</Project>

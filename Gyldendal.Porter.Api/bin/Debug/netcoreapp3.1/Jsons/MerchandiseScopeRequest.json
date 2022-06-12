@@ -1,0 +1,89 @@
+{
+  "parentSubscriptionId": 0,
+  "name": "Porter Merchandise Scope",
+  "enabled": false,
+  "offsetDate": "2000-09-01T12:28:28.923Z",
+  "businessObjectScope": {
+    "businessObjectName": "MerchandiseBusinessObject",
+    "resolvableScopeNodes": [
+      {
+        "technicalName": "MerchandiseContributorAuthor"
+      },
+      {
+        "technicalName": "MerchandiseCollectionTitle"
+      },
+      {
+        "technicalName": "MerchandiseBatch",
+        "resolvedObject": {
+          "businessObjectName": "MerchandiseBatchBusinessObject",
+          "resolvableScopeNodes": [],
+          "metadataScopeNodes": [
+            { "metadataTechnicalName": "MerchandiseBatchNr" },
+            { "metadataTechnicalName": "MerchandiseBatchResponsible" },
+            { "metadataTechnicalName": "MerchandiseBatchCalculationNumber" },
+            { "metadataTechnicalName": "MerchandiseBatchCopies" },
+            { "metadataTechnicalName": "MerchandiseBatchPublishingDate" },
+            { "metadataTechnicalName": "MerchandiseBatchSupplyPriceWithoutVAT" },
+            { "metadataTechnicalName": "MerchandiseBatchSupplyPriceWithVAT" },
+            { "metadataTechnicalName": "MerchandiseBatchSupplyDiscountCode" }
+          ],
+          "phaseScopeNodes": [
+            { "phaseTechnicalName": "MerchandiseBatchDraft" },
+            { "phaseTechnicalName": "MerchandiseBatchReleased" }
+          ]
+        }
+      }
+    ],
+    "metadataScopeNodes": [
+      { "metadataTechnicalName": "MerchandiseApprovedIdeaCalculation" },
+      { "metadataTechnicalName": "MerchandiseContractApproved" },
+      { "metadataTechnicalName": "MerchandiseRightsApproved" },
+      { "metadataTechnicalName": "MerchandiseBOPInternelDisplayOnly" },
+      { "metadataTechnicalName": "MerchandiseBOPIsVisibleAndOrderable" },
+      { "metadataTechnicalName": "MerchandiseDisplayOnShops" },
+      { "metadataTechnicalName": "MerchandiseTermination" },
+      { "metadataTechnicalName": "MerchandiseRightsStatus" },
+      { "metadataTechnicalName": "MerchandiseEAN" },
+      { "metadataTechnicalName": "MerchandiseTitle" },
+      { "metadataTechnicalName": "MerchandiseSubtitle" },
+      { "metadataTechnicalName": "MerchandiseImprint" },
+      { "metadataTechnicalName": "MerchandiseCreator" },
+      { "metadataTechnicalName": "MerchandiseEditorialDivision" },
+      { "metadataTechnicalName": "MerchandiseManagingEditor" },
+      { "metadataTechnicalName": "MerchandiseEditorialResponsible" },
+      { "metadataTechnicalName": "MerchandiseProductionResponsible" },
+      { "metadataTechnicalName": "MerchandiseMarketingResponsible" },
+      { "metadataTechnicalName": "MerchandiseMaterialeType" },
+      { "metadataTechnicalName": "MerchandiseMeasurementWidth" },
+      { "metadataTechnicalName": "MerchandiseMeasurementHeight" },
+      { "metadataTechnicalName": "MerchandisePrintOnDemand" },
+      { "metadataTechnicalName": "MerchandiseSubjectCodeMain" },
+      { "metadataTechnicalName": "MerchandiseSubjectCode" },
+      { "metadataTechnicalName": "MerchandiseCoverImageView" },
+      { "metadataTechnicalName": "MerchandiseGUInternetSubject" },
+      { "metadataTechnicalName": "MerchandiseAudienceRange" },
+      { "metadataTechnicalName": "MerchandiseEducationSubjectLevel" },
+      { "metadataTechnicalName": "MerchandiseWebText" },
+      { "metadataTechnicalName": "MerchandiseGyldendalShopText" },
+      { "metadataTechnicalName": "MerchandiseInternalText" },
+      { "metadataTechnicalName": "MerchandiseSupplyPriceWithoutVAT" },
+      { "metadataTechnicalName": "MerchandiseSupplyPriceWithVAT" },
+      { "metadataTechnicalName": "MerchandiseSupplyDiscountCode" },
+      { "metadataTechnicalName": "MerchandisePublishedQuarter" },
+      { "metadataTechnicalName": "MerchandisePublishedDate" },
+      { "metadataTechnicalName": "MerchandiseCopies" },
+      { "metadataTechnicalName": "MerchandiseFreeSampleCopies" },
+      { "metadataTechnicalName": "MerchandiseAtypicalProduction" },
+      { "metadataTechnicalName": "MerchandiseRightsTransferredTo" },
+      { "metadataTechnicalName": "MerchandiseDecommissionDate" },
+      { "metadataTechnicalName": "MerchandiseFunding" },
+      { "metadataTechnicalName": "MerchandiseBusinessIntelligenceTrackingTaxonomies" },
+      { "metadataTechnicalName": "MerchandiseBusinessIntelligenceTags" }
+    ],
+    "phaseScopeNodes": [
+      { "phaseTechnicalName": "MerchandisePreSales" },
+      { "phaseTechnicalName": "MerchandiseSales" },
+      { "phaseTechnicalName": "MerchandiseTermination" }
+    ]
+  }
+}

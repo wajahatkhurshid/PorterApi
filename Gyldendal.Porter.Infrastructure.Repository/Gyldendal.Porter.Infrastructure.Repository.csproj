@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.13.2" />
+    <PackageReference Include="MongoDB.Driver" Version="2.13.2" />
+    <PackageReference Include="Polly" Version="7.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Porter.Common\Gyldendal.Porter.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Domain.Contracts\Gyldendal.Porter.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Infrastructure.ExternalClients\Gyldendal.Porter.Infrastructure.ExternalClients.csproj" />
+  </ItemGroup>
+
+</Project>

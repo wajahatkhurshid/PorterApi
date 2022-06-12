@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e166b1dc-6008-4975-926b-4a4169c2eb12</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>App_Data\Gyldendal.Porter.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\RVH\Source\Repos\porter\src\Gyldendal.Porter.Api\Gyldendal.Porter.Api\Gyldendal.Porter.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.24" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.24" />
+    <PackageReference Include="Hangfire.Mongo" Version="0.7.22" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.Extensions.Azure" Version="1.1.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.13.2" />
+    <PackageReference Include="Radzen.Blazor" Version="3.12.0" />
+    <PackageReference Include="RapidCore.Mongo" Version="0.26.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Porter.Application.Configuration\Gyldendal.Porter.Application.Configuration.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Application.Contracts\Gyldendal.Porter.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Application.HangfireJobs\Gyldendal.Porter.Application.HangfireJobs.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Application.Services\Gyldendal.Porter.Application.Services.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Common\Gyldendal.Porter.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NewRelic.Agent.Api" Version="8.40.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Porter.Common\Gyldendal.Porter.Common.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Infrastructure.ExternalClients\Gyldendal.Porter.Infrastructure.ExternalClients.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Infrastructure.Repository\Gyldendal.Porter.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Infrastructure.Services\Gyldendal.Porter.Infrastructure.Services.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.SolrMonitoring\Gyldendal.Porter.SolrMonitoring.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="BackgroundHosted\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Jsons\SeriesScopeRequest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Jsons\ProfileScopeRequest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Jsons\ProductScopeRequest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Jsons\SubscriptionRequest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Jsons\MerchandiseScopeRequest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Jsons\WorkScopeRequest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

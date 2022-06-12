@@ -1,0 +1,776 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.CookingProcessor.Worker\\Gyldendal.Porter.Application.CookingProcessor.Worker.csproj": {}
+  },
+  "projects": {
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Configuration\\Gyldendal.Porter.Application.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Configuration\\Gyldendal.Porter.Application.Configuration.csproj",
+        "projectName": "Gyldendal.Porter.Application.Configuration",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Configuration\\Gyldendal.Porter.Application.Configuration.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\Gyldendal.Porter.Application.Services.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\Gyldendal.Porter.Application.Services.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\Gyldendal.Porter.Infrastructure.Repository.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\Gyldendal.Porter.Infrastructure.Repository.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Services\\Gyldendal.Porter.Infrastructure.Services.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Services\\Gyldendal.Porter.Infrastructure.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.2, )"
+            },
+            "RapidCore.Mongo": {
+              "target": "Package",
+              "version": "[0.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj",
+        "projectName": "Gyldendal.Porter.Application.Contracts",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.CookingProcessor.Worker\\Gyldendal.Porter.Application.CookingProcessor.Worker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.CookingProcessor.Worker\\Gyldendal.Porter.Application.CookingProcessor.Worker.csproj",
+        "projectName": "Gyldendal.Porter.Application.CookingProcessor.Worker",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.CookingProcessor.Worker\\Gyldendal.Porter.Application.CookingProcessor.Worker.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.CookingProcessor.Worker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Configuration\\Gyldendal.Porter.Application.Configuration.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Configuration\\Gyldendal.Porter.Application.Configuration.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\Gyldendal.Porter.Application.Services.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\Gyldendal.Porter.Application.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.24, )"
+            },
+            "Hangfire.Mongo": {
+              "target": "Package",
+              "version": "[0.7.22, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.WindowsServices": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.18, 3.1.18]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\Gyldendal.Porter.Application.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\Gyldendal.Porter.Application.Services.csproj",
+        "projectName": "Gyldendal.Porter.Application.Services",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\Gyldendal.Porter.Application.Services.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.5.1, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.24, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Azure": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj",
+        "projectName": "Gyldendal.Porter.Common",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Gyldendal.LoggingManager": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj",
+        "projectName": "Gyldendal.Porter.Domain.Contracts",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj",
+        "projectName": "Gyldendal.Porter.Infrastructure.ExternalClients",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Application.Contracts\\Gyldendal.Porter.Application.Contracts.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.Extensions.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NSwag.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[13.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\Gyldendal.Porter.Infrastructure.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\Gyldendal.Porter.Infrastructure.Repository.csproj",
+        "projectName": "Gyldendal.Porter.Infrastructure.Repository",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\Gyldendal.Porter.Infrastructure.Repository.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Common\\Gyldendal.Porter.Common.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.13.2, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.2, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Services\\Gyldendal.Porter.Infrastructure.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Services\\Gyldendal.Porter.Infrastructure.Services.csproj",
+        "projectName": "Gyldendal.Porter.Infrastructure.Services",
+        "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Services\\Gyldendal.Porter.Infrastructure.Services.csproj",
+        "packagesPath": "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\",
+        "outputPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\NuGet.Config",
+          "C:\\Users\\wajahat.khurshid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Wajahat\\First Task\\Task1\\LocalNuget": {},
+          "D:\\Wajahat\\nuget\\Task1\\NugetUpload": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gyldendalnugetserver.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Domain.Contracts\\Gyldendal.Porter.Domain.Contracts.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.ExternalClients\\Gyldendal.Porter.Infrastructure.ExternalClients.csproj"
+              },
+              "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\Gyldendal.Porter.Infrastructure.Repository.csproj": {
+                "projectPath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.Infrastructure.Repository\\Gyldendal.Porter.Infrastructure.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.5.1, )"
+            },
+            "Microsoft.Azure.Management.ServiceBus": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

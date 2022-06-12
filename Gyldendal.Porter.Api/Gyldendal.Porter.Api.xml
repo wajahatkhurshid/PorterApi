@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gyldendal.Porter.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Gyldendal.Porter.Api.Controllers.ContributorController">
+            <summary>
+             Contributor Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ContributorController.#ctor(MediatR.IMediator)">
+            <summary>
+            Endpoints for fetching contributor change sets and look up of contributors
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ContributorController.GetContributor(Gyldendal.Porter.Application.Services.Contributor.GetContributorQuery)">
+            <summary>
+            Gets a Contributor
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ContributorController.GetUpdatedContributorsCount(Gyldendal.Porter.Application.Contracts.Enums.WebShop,System.Int64)">
+            <summary>
+            Returns the number of contributors updated after the given DateTime.
+            </summary>
+            <param name="webShop"></param>
+            <param name="updatedAfterTicks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ContributorController.GetContributorsUpdateInfo(Gyldendal.Porter.Application.Contracts.Enums.WebShop,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Returns the asked page of ContributorUpdatedInfo objects, for each contributor
+            </summary>
+            <param name="webShop"></param>
+            <param name="updatedAfterTicks">Timestamp to indicate the time a contributor has been updated after</param>
+            <param name="pageIndex">Minimum value 1.</param>
+            <param name="pageSize">Minimum value 1.</param>
+            <returns>A list of contributors update information(updated, deleted, what time)</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ContributorController.GetContributorUpdateInfo(Gyldendal.Porter.Application.Contracts.Enums.WebShop,System.String)">
+            <summary>
+            Returns the latest update info for synchronization purposes, for the given contributor id
+            </summary>
+            <param name="webShop"></param>
+            <param name="contributorId">ID of the contributor</param>
+            <returns>Returns the update info for a specific contributor ID</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ContributorController.ContributorSearch(Gyldendal.Porter.Application.Services.Contributor.ContributorSearchQuery)">
+            <summary>
+            Get Author by search string(first name)
+            </summary>
+            <returns>A list of contributors and their count</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ContributorController.IsContributorDataAvailable">
+            <summary>
+            Checks that Contributor cooked Collection Exists and its document size is greater than 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Controllers.GpmSubscriptionController">
+            <summary>
+             Gpm Subscription Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.GpmSubscriptionController.#ctor(Gyldendal.Porter.Common.ILogger,Gyldendal.Porter.Application.Services.Interfaces.IContainerService,MediatR.IMediator,Gyldendal.Porter.Application.Services.Interfaces.IReceiveGpmMessageService)">
+            <summary>
+            Responsible for anything related to the GPM subscriptions
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.GpmSubscriptionController.AddContainerMessage(System.String)">
+            <summary>
+            Used by GPM to push new container messages
+            </summary>
+            <param name="containerPayload">JSON payload with container data</param>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.GpmSubscriptionController.CreateSubscription(System.String,System.String,System.String)">
+            <summary>
+            Create subscription and scopes in GPM
+            </summary>
+            <param name="gpmEnvironment">Dev,Test,QA,Production</param>
+            <param name="porterEnvironment">Dev,Test,QA,Production</param>
+            <param name="subscriptionName"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.GpmSubscriptionController.TriggerReplay(System.Int32,System.Boolean)">
+            <summary>
+            Triggers a reload of GPM data
+            </summary>
+            <param name="subscriptionId">Subscription to trigger reload for</param>
+            <param name="shouldWipeCollections">Clear collection if set</param>
+            <returns>True if successful</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.GpmSubscriptionController.ReceiveGpmServiceBusMessage">
+            <summary>
+            Test method to trigger receiving of GPM azure bus messages. It will be removed and possibly replaced by a hangfire job
+            </summary>
+            <returns>True if successful</returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Controllers.MasterDataController">
+            <summary>
+             Master Data Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.MasterDataController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.MasterDataController.GetMediaTypes">
+            <summary>
+            Get collection of Media Types
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.MasterDataController.GetMaterialTypes">
+            <summary>
+            Get collection of Material Types
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.MasterDataController.GetAreas(Gyldendal.Porter.Application.Contracts.Enums.WebShop)">
+            <summary>
+            Get a collection of Areas by webshop
+            </summary>
+            <param name="webShop"></param>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.MasterDataController.GetSubjects(Gyldendal.Porter.Application.Contracts.Request.GetSubjectsRequest)">
+            <summary>
+             Get a collection of Subjects for the specified Webshop and for Specific Area
+            (Source: MongoDB)
+            </summary>
+            <param name="request">Webshop, AreaId</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.MasterDataController.GetSubAreas(Gyldendal.Porter.Application.Contracts.Request.GetSubAreasRequest)">
+            <summary>
+             Get a collection of SubAreas for the specified Webshop and for Subject
+            </summary>
+            <param name="request">Webshop,SubjectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.MasterDataController.GetLevels(Gyldendal.Porter.Application.Contracts.Request.GetLevelsRequest)">
+            <summary>
+             Get a collection of Levels for the specified Webshop and for Specific Area
+            </summary>
+            <param name="request">Webshop,AreaId</param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Controllers.ProductController">
+            <summary>
+             Product Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.GetDetails(Gyldendal.Porter.Application.Contracts.Request.GetProductDetailsRequest)">
+            <summary>
+            Get Product Details
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.GetAccessType(Gyldendal.Porter.Application.Contracts.Request.GetProductAccessTypeRequest)">
+            <summary>
+            Get Product Access Type
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.GetBasicDetail(Gyldendal.Porter.Application.Contracts.Request.GetProductsBasicDetailRequest)">
+            <summary>
+            Get Products Basic Detail
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.GetAttachments(Gyldendal.Porter.Application.Contracts.Request.GetProductAttachmentsRequest)">
+            <summary>
+            Get Product Attachments
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.GetUpdatedCount(Gyldendal.Porter.Application.Contracts.Request.GetProductsUpdateCountRequest)">
+            <summary>
+            Get count of Products updated for a web shop after the given time.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.GetUpdatedInfo(Gyldendal.Porter.Application.Contracts.Request.GetProductsUpdateInfoRequest)">
+            <summary>
+            Get Products update info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.ProductSearch(Gyldendal.Porter.Application.Services.Product.ProductSearchQuery)">
+            <summary>
+            Get Search Products by Isbn starting with provided value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.ProductController.IsProductDataAvailable">
+            <summary>
+            Checks that Product Collection Exists and its document size is greater than 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Controllers.SolrMonitoringController">
+            <summary>
+            Contains functionality related to the monitoring and comparison of old SOLR cores with the new Porter cores
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.SolrMonitoringController.CompareProducts(Gyldendal.Porter.SolrMonitoring.SolrMonitoringRequest)">
+            <summary>
+            Criteria=> 0=All Shops
+            2=GU,3=HR,5=Munks,11=ClubBogklub,12=ClubBoerne,13=ClubSamleren,14=ClubKrimi,15=ClubPsykeSjael,16=ClubHistorie,17=ClubPaedagogisk,
+            18=Highlight,19=ClubBoerne3To5,20=ClubBoerne5To10,21=ClubFlamingo,22,23,24,26
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.SolrMonitoringController.CompareContributors(Gyldendal.Porter.SolrMonitoring.SolrMonitoringRequest)">
+            <summary>
+            Criteria=> 0=All Shops
+            2=GU,3=HR,5=Munks,11=ClubBogklub,12=ClubBoerne,13=ClubSamleren,14=ClubKrimi,15=ClubPsykeSjael,16=ClubHistorie,17=ClubPaedagogisk,
+            18=Highlight,19=ClubBoerne3To5,20=ClubBoerne5To10,21=ClubFlamingo,22,23,24,26
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.SolrMonitoringController.CompareWorkReviews(Gyldendal.Porter.SolrMonitoring.SolrMonitoringRequest)">
+            <summary>
+            Criteria=> 0=All Shops
+            2=GU,3=HR,5=Munks,11=ClubBogklub,12=ClubBoerne,13=ClubSamleren,14=ClubKrimi,15=ClubPsykeSjael,16=ClubHistorie,17=ClubPaedagogisk,
+            18=Highlight,19=ClubBoerne3To5,20=ClubBoerne5To10,21=ClubFlamingo,22,23,24,26
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Controllers.SystemSeriesController">
+            <summary>
+             System Series Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.SystemSeriesController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.SystemSeriesController.GetSeriesById(Gyldendal.Porter.Application.Contracts.Request.GetSeriesRequest)">
+            <summary>
+            Get System Series By Id
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.SystemSeriesController.GetSeries(Gyldendal.Porter.Application.Contracts.Request.GetSeriesPaginatedRequest)">
+            <summary>
+            Get System Series Collection
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Controllers.WorkController">
+            <summary>
+             Work Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkController.GetWork(Gyldendal.Porter.Application.Services.Work.GetWorkQuery)">
+            <summary>
+            Gets a work with full details
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkController.GetWorkByProduct(Gyldendal.Porter.Application.Contracts.Request.GetWorkByProductRequest)">
+            <summary>
+            Gets a work by product Id and type
+            </summary>
+            <returns>200 if message acknowledged</returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Controllers.WorkReviewController">
+            <summary>
+             WorkReview Controller
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkReviewController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkReviewController.GetWorkReview(Gyldendal.Porter.Application.Services.WorkReview.GetWorkReviewQuery)">
+            <summary>
+            Get WorkReview
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkReviewController.GetWorkReviewsUpdateInfo(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Returns the asked page of WorkReviewUpdatedInfo objects, for each WorkReview
+            </summary>
+            <param name="updatedAfterTicks"></param>
+            <param name="pageIndex">Minimum value 1.</param>
+            <param name="pageSize">Minimum value 1.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkReviewController.GetUpdatedWorkReviewsCount(System.Int64)">
+            <summary>
+            Returns the number of WorkReviews updated after the given DateTime.
+            </summary>
+            <param name="updatedAfterTicks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkReviewController.IsWorkReviewDataAvailable">
+            <summary>
+            Checks that WorkReview Collection Exists and its document size is greater than 0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Controllers.WorkReviewController.GetWorkReviews(Gyldendal.Porter.Application.Services.WorkReview.GetWorkReviewsByProductQuery)">
+            <summary>
+            Get WorkReviews against Product
+            </summary>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Extensions.MiddlewareExtension">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Extensions.MiddlewareExtension.ConfigureRequestPipeline(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostApplicationLifetime)">
+            <summary>
+            Request Pipeline Configuration
+            </summary>
+            <param name="app"></param>
+            <param name="appLifetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Extensions.MiddlewareExtension.UseExceptionHandling(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds middleware to handle exceptions and log exception details.
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Extensions.MongoMigrationRunner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Extensions.MongoMigrationRunner.RunMigration(System.IServiceProvider,Microsoft.Extensions.Hosting.IHostApplicationLifetime)">
+            <summary>
+            Run all the Migrations in the start of application
+            </summary>
+            <param name="container"></param>
+            <param name="appLife"></param>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.HangFire.HangfireAuthorizationFilter">
+            <summary>
+            Hangfire Authorization Filter
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.HangFire.HangfireAuthorizationFilter.Authorize(Hangfire.Dashboard.DashboardContext)">
+            <summary>
+            Hangfire Dashboard Context for Authorization
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.HangFire.HangfireJobs">
+            <summary>
+            Configuration of HangFire Jobs
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.HangFire.HangfireJobs.ConfigureHangfireJobs">
+            <summary>
+            Triggering Hangfire Jobs startup method on specified CRON expression 
+            </summary>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.HangFire.HangFireSetup">
+            <summary>
+            Setting Up Hangfire
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.HangFire.HangFireSetup.UsePorterHangfirePipeline(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            HangFire PipeLine Configuration
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.HangFire.HangFireSetup.UsePorterHangfireServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            HangFire Services configurations
+            </summary>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Middleware.ExceptionHandlingMiddleware">
+            <summary>
+            Handles application exceptions
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Middleware.ExceptionHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Gyldendal.Porter.Common.ILogger,Gyldendal.Porter.Common.IErrorResponseExtractor)">
+            <summary>
+            Initializes dependencies for exception handling middleware
+            </summary>
+            <param name="next"></param>
+            <param name="logger"></param>
+            <param name="errorResponseExtractor"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Middleware.ExceptionHandlingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Handles exception
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Middleware.HttpLoggingMiddleware">
+            <summary>
+            Adds a logger on requests and responses
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Middleware.HttpLoggingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Gyldendal.Porter.Common.ILogger)">
+            <summary>
+            Initializes logger specific dependencies
+            </summary>
+            <param name="next"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Middleware.HttpLoggingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Log the specific request/response
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Program.Main(System.String[])">
+            <summary>
+            Startup Point of application
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Creating host 
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gyldendal.Porter.Api.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Startup 
+            </summary>
+            <param name="configuration"></param>
+            <param name="environment"></param>
+        </member>
+        <member name="P:Gyldendal.Porter.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+             This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Gyldendal.Porter.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="appLifetime"></param>
+        </member>
+    </members>
+</doc>

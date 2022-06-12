@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "xXP7+8giAfZrImy585v1XRg8/Oj8IggL2L4qpo7BX1DrzYF+DBsvCKn5ZiH3ke/2x9FIxhCeDhcXXhQnBOQRRA==",
+  "success": true,
+  "projectFilePath": "D:\\Wajahat\\PorterApi\\src\\Gyldendal.Porter.Api\\Gyldendal.Porter.SolrMonitoring\\Gyldendal.Porter.SolrMonitoring.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\wajahat.khurshid\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

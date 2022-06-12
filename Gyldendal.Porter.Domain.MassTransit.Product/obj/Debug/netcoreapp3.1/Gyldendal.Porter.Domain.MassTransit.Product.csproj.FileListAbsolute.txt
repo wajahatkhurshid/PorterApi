@@ -1,0 +1,14 @@
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.deps.json
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.csproj.AssemblyReference.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.AssemblyInfoInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.AssemblyInfo.cs
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.csproj.CoreCompileInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.csproj.CopyComplete
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Product\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Product.pdb

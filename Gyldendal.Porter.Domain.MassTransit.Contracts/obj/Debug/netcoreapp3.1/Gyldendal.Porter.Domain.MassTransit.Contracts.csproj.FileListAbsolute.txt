@@ -1,0 +1,9 @@
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.deps.json
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.csproj.AssemblyReference.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.AssemblyInfoInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.AssemblyInfo.cs
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.csproj.CoreCompileInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Domain.MassTransit.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.MassTransit.Contracts.pdb

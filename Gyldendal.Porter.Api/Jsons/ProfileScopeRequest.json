@@ -1,0 +1,32 @@
+{
+  "parentSubscriptionId": 0,
+  "name": "Porter Profile Scope",
+  "enabled": false,
+  "offsetDate": "2000-09-01T12:28:28.923Z",
+  "businessObjectScope": {
+    "businessObjectName": "ProfileBusinessObject",
+    "resolvableScopeNodes": [
+      {
+        "technicalName": "ProfileContributorMembers",
+        "resolvedObject": {
+          "businessObjectName": "ProfileMemberBusinessObject",
+          "resolvableScopeNodes": [],
+          "metadataScopeNodes": [
+            { "metadataTechnicalName": "ProfileMemberId" },
+            { "metadataTechnicalName": "ProfileMemberDisplayName" },
+            { "metadataTechnicalName": "ProfileMemberFirstName" },
+            { "metadataTechnicalName": "ProfileMemberSecondName" }
+          ],
+          "phaseScopeNodes": []
+        }
+      }
+    ],
+    "metadataScopeNodes": [
+      { "metadataTechnicalName": "ProfileID" },
+      { "metadataTechnicalName": "ProfileName" },
+      { "metadataTechnicalName": "ProfileImageUrl" },
+      { "metadataTechnicalName": "ProfileText" }
+    ],
+    "phaseScopeNodes": []
+  }
+}

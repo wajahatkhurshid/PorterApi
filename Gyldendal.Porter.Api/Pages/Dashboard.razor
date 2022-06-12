@@ -1,0 +1,222 @@
+﻿@page "/" 
+@using Gyldendal.Porter.Domain.Contracts.Entities.Queue
+@using Gyldendal.Porter.Domain.Contracts.Repositories
+@inject IEntityUpdateRepository _entityUpdateRepository;
+@inject ICookedProductRepository _cookedProductRepository;
+@inject ICookedSeriesRepository _cookedSeriesRepository;
+@inject ICookedWorkReviewRepository _cookedWorkReviewRepository;
+@inject ICookedContributorRepository _cookedContributorRepository;
+
+<h3 style="margin-top: 20px">Dashboard</h3>
+
+@if (_entityUpdates == null || _entityUpdates.Count == 0)
+{
+    <p>No updates</p>
+}
+else
+{
+    <div style="margin-bottom: 16px">
+        <RadzenButton Click="@FirstPage" Text="First page"/>
+        <RadzenButton Click="@LastPage" Text="Last page"/>
+    </div>
+    <RadzenDataGrid @ref=@_entityUpdateDataGrid Data="@_entityUpdates" TItem="EntityUpdate" AllowPaging="true" AllowSorting="true"
+                    PageSizeOptions="@_pageSizeOptions" ShowPagingSummary="@showPagerSummary" PagingSummaryFormat="@PagingSummaryFormat">
+        <Columns>
+            <RadzenDataGridColumn TItem="EntityUpdate" Property="EntityId" Title="ID"/>
+            <RadzenDataGridColumn TItem="EntityUpdate" Property="EntityType" Title="Type"/>
+            <RadzenDataGridColumn TItem="EntityUpdate" Property="UpdateTimestamp" Title="Timestamp">
+                <Template Context="entityUpdate">
+                    @entityUpdate.UpdateTimestamp.ToString("O")
+                </Template>
+            </RadzenDataGridColumn>
+        </Columns>
+    </RadzenDataGrid>
+}
+
+@if (_docCounts != null)
+{
+    <div style="margin-top: 25px">
+        <RadzenDataGrid @ref="_countDataGrid" AllowFiltering="true" AllowPaging="true" PageSize="3" AllowSorting="true" Data="@_docCounts" TItem="CountRow">
+            <Columns>
+                <RadzenDataGridColumn Width="200px" TItem="CountRow" Property="Title" Title="Count type"/>
+                <RadzenDataGridColumn Width="200px" TItem="CountRow" Property="ProductCount" Title="Products"/>
+                <RadzenDataGridColumn Width="200px" TItem="CountRow" Property="SeriesCount" Title="Series"/>
+                <RadzenDataGridColumn Width="200px" TItem="CountRow" Property="ContributorCount" Title="Contributor"/>
+                <RadzenDataGridColumn Width="200px" TItem="CountRow" Property="WorkReviewCount" Title="Work Review"/>
+            </Columns>
+        </RadzenDataGrid>
+    </div>
+}
+
+<h2 style="text-align: center; margin-top: 10px;">Entity Data</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-lg-4">
+            <RadzenChart SeriesClick=@OnSeriesClick>
+                <RadzenPieSeries Data="@chartData" Title="Count" CategoryProperty="Entity" ValueProperty="Count" />
+                <RadzenValueAxis>
+                    <RadzenGridLines Visible="true" />
+                </RadzenValueAxis>
+                <RadzenCategoryAxis>
+                    <RadzenGridLines Visible="true" />
+                </RadzenCategoryAxis>
+                <RadzenValueAxis>
+                    <RadzenAxisTitle Text="Percentage" />
+                </RadzenValueAxis>
+                <RadzenCategoryAxis>
+                    <RadzenAxisTitle Text="Source" />
+                </RadzenCategoryAxis>
+                <RadzenLegend Position="LegendPosition.Right" />
+            </RadzenChart>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+            <RadzenChart SeriesClick=@OnSeriesClick>
+                <RadzenPieSeries Data="@sevenDaysChartData" Title="Count" CategoryProperty="Entity" ValueProperty="Count" />
+                <RadzenValueAxis>
+                    <RadzenGridLines Visible="true" />
+                </RadzenValueAxis>
+                <RadzenCategoryAxis>
+                    <RadzenGridLines Visible="true" />
+                </RadzenCategoryAxis>
+                <RadzenValueAxis>
+                    <RadzenAxisTitle Text="Percentage" />
+                </RadzenValueAxis>
+                <RadzenCategoryAxis>
+                    <RadzenAxisTitle Text="Source" />
+                </RadzenCategoryAxis>
+                <RadzenLegend Position="LegendPosition.Right" />
+            </RadzenChart>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+            <RadzenChart SeriesClick=@OnSeriesClick>
+                <RadzenPieSeries Data="@thirtyDaysChartData" Title="Count" CategoryProperty="Entity" ValueProperty="Count" />
+                <RadzenValueAxis>
+                    <RadzenGridLines Visible="true" />
+                </RadzenValueAxis>
+                <RadzenCategoryAxis>
+                    <RadzenGridLines Visible="true" />
+                </RadzenCategoryAxis>
+                <RadzenValueAxis>
+                    <RadzenAxisTitle Text="Percentage" />
+                </RadzenValueAxis>
+                <RadzenCategoryAxis>
+                    <RadzenAxisTitle Text="Source" />
+                </RadzenCategoryAxis>
+                <RadzenLegend Position="LegendPosition.Right" />
+            </RadzenChart>
+        </div>
+    </div>
+    
+</div>
+@code {
+
+
+    void OnSeriesClick(SeriesClickEventArgs args)
+    {
+
+    }
+    public class ChartData
+    {
+        public string Entity { get; set; }
+        public long Count { get; set; }
+        public bool Explode { get; set; }
+    }
+
+
+    bool showPagerSummary = true;
+    private List<EntityUpdate> _entityUpdates;
+
+    private List<CountRow> _docCounts = null;
+
+    private List<ChartData> chartData = null;
+    private List<ChartData> sevenDaysChartData = null;
+    private List<ChartData> thirtyDaysChartData = null;
+
+    readonly IEnumerable<int> _pageSizeOptions = new int[] {10, 20, 30};
+    RadzenDataGrid<EntityUpdate> _entityUpdateDataGrid;
+    RadzenDataGrid<CountRow> _countDataGrid;
+    private const string PagingSummaryFormat = "Displaying page {0} of {1} (total {2} records)";
+
+    protected override bool ShouldRender() => true;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        _entityUpdates = await _entityUpdateRepository.GetAllAsync();
+        var now = DateTime.Now;
+        var weekTimeSpan = DateTime.Now.AddDays(-7);
+        var monthTimeSpan = DateTime.Now.AddDays(-30);
+        var prodCount = await _cookedProductRepository.GetCount();
+        var contributorCount = await _cookedContributorRepository.GetCount();
+        var seriesCount = await _cookedProductRepository.GetCount();
+        var workReviewCount = await _cookedContributorRepository.GetCount();
+        var sevenDaysProductCount = await _cookedProductRepository.GetCountByTimeRange(weekTimeSpan, now);
+        var sevenDaysContributorCount = await _cookedContributorRepository.GetCountByTimeRange(weekTimeSpan, now);
+        var sevenDaysSeriesCount = await _cookedSeriesRepository.GetCountByTimeRange(weekTimeSpan, now);
+        var sevenDaysWorkReviewCount = await _cookedWorkReviewRepository.GetCountByTimeRange(weekTimeSpan, now);
+        var thirtyDaysProductCount = await _cookedProductRepository.GetCountByTimeRange(monthTimeSpan, now);
+        var thirtyDaysContributorCount = await _cookedContributorRepository.GetCountByTimeRange(monthTimeSpan, now);
+        var thirtyDaysSeriesCount = await _cookedSeriesRepository.GetCountByTimeRange(monthTimeSpan, now);
+        var thirtyDaysWorkReviewCount = await _cookedWorkReviewRepository.GetCountByTimeRange(monthTimeSpan, now);
+        _docCounts = new List<CountRow>
+        {
+            new CountRow("Current count", prodCount, seriesCount, contributorCount, workReviewCount),
+            new CountRow("Updated in last 7 days",sevenDaysProductCount ,sevenDaysSeriesCount ,sevenDaysContributorCount , sevenDaysWorkReviewCount),
+            new CountRow("Updated in last 30 days",thirtyDaysProductCount , thirtyDaysSeriesCount,thirtyDaysContributorCount ,thirtyDaysWorkReviewCount )
+        };
+
+        chartData = new List<ChartData>
+        {
+            new ChartData(){ Entity = "Products",Count =prodCount, Explode = false},
+            new ChartData(){ Entity = "Contributors",Count = contributorCount, Explode = false},
+            new ChartData(){ Entity = "WorkReviews",Count = workReviewCount, Explode = false},
+            new ChartData(){ Entity = "Series",Count = seriesCount, Explode = false},
+
+        };
+        sevenDaysChartData = new List<ChartData>
+        {
+            new ChartData(){ Entity = "Products",Count =sevenDaysProductCount, Explode = false},
+            new ChartData(){ Entity = "Contributors",Count = sevenDaysContributorCount, Explode = false},
+            new ChartData(){ Entity = "WorkReviews",Count = sevenDaysWorkReviewCount, Explode = false},
+            new ChartData(){ Entity = "Series",Count = sevenDaysSeriesCount, Explode = false},
+
+        };
+        thirtyDaysChartData = new List<ChartData>
+        {
+            new ChartData(){ Entity = "Products",Count =thirtyDaysProductCount, Explode = false},
+            new ChartData(){ Entity = "Contributors",Count = thirtyDaysContributorCount, Explode = false},
+            new ChartData(){ Entity = "WorkReviews",Count = thirtyDaysWorkReviewCount, Explode = false},
+            new ChartData(){ Entity = "Series",Count = thirtyDaysSeriesCount, Explode = false},
+
+        };
+    }
+
+    async Task FirstPage()
+    {
+        await _entityUpdateDataGrid.FirstPage();
+    }
+
+    async Task LastPage()
+    {
+        await _entityUpdateDataGrid.LastPage();
+    }
+
+    class CountRow
+    {
+        public CountRow(string title, long productCount, long seriesCount, long contributorCount, long workReviewCount)
+        {
+            Title = title;
+            ProductCount = productCount;
+            SeriesCount = seriesCount;
+            ContributorCount = contributorCount;
+            WorkReviewCount = workReviewCount;
+        }
+
+        public string Title { get; set; }
+        public long ProductCount { get; set; }
+        public long SeriesCount { get; set; }
+        public long ContributorCount { get; set; }
+        public long WorkReviewCount { get; set; }
+    }
+
+}

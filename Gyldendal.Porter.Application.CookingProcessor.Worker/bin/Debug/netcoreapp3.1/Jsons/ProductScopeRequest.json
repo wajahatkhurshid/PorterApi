@@ -1,0 +1,171 @@
+{
+  "commandDto": {
+    "parentSubscriptionId": 0,
+    "name": "Porter Product Scope",
+    "endPointURL": "",
+    "businessObjectScope": {
+      "businessObjectName": "ProductBusinessObject",
+      "resolvableScopeNodes": [
+        {
+          "technicalName": "ProductContributorAuthor",
+          "resolvedObject": {
+            "businessObjectName": "ProfileBusinessObject",
+            "resolvableScopeNodes": [
+              {
+                "technicalName": "ProfileContributorMembers",
+                "resolvedObject": {
+                  "businessObjectName": "ProfileMemberBusinessObject",
+                  "resolvableScopeNodes": [],
+                  "metadataScopeNodes": [
+                    { "metadataTechnicalName": "ProfileMemberId" },
+                    { "metadataTechnicalName": "ProfileMemberDisplayName" },
+                    { "metadataTechnicalName": "ProfileMemberFirstName" },
+                    { "metadataTechnicalName": "ProfileMemberSecondName" }
+                  ],
+                  "phaseScopeNodes": []
+                }
+              }
+            ],
+            "metadataScopeNodes": [
+              { "metadataTechnicalName": "ProfileID" },
+              { "metadataTechnicalName": "ProfileName" },
+              { "metadataTechnicalName": "ProfileImageUrl" },
+              { "metadataTechnicalName": "ProfileText" }
+            ],
+            "phaseScopeNodes": []
+          }
+        },
+        {
+          "technicalName": "ProductCollectionTitle",
+          "resolvedObject": {
+            "businessObjectName": "SeriesBusinessObject",
+            "resolvableScopeNodes": [
+              {
+                "technicalName": "SeriesSubseries"
+              }
+            ],
+            "metadataScopeNodes": [
+              { "metadataTechnicalName": "SeriesTitle" },
+              { "metadataTechnicalName": "SeriesInternetSubject" },
+              { "metadataTechnicalName": "SeriesDescription" },
+              { "metadataTechnicalName": "SeriesSerieSystemFlag" }
+            ],
+            "phaseScopeNodes": []
+          }
+        },
+        {
+          "technicalName": "MarketingAttachment",
+          "resolvedObject": {
+            "businessObjectName": "AttachmentBusinessObject",
+            "resolvableScopeNodes": [],
+            "metadataScopeNodes": [
+              { "metadataTechnicalName": "AttachmentTitle" },
+              { "metadataTechnicalName": "AttachmentFileType" },
+              { "metadataTechnicalName": "AttachmentDescription" }
+            ],
+            "phaseScopeNodes": []
+          }
+        },
+        {
+          "technicalName": "PrintRun",
+          "resolvedObject": {
+            "businessObjectName": "PrintRunBusinessObject",
+            "resolvableScopeNodes": [],
+            "metadataScopeNodes": [
+              { "metadataTechnicalName": "PrintRunProductPrintRun" },
+              { "metadataTechnicalName": "PrintRunPublishedDate" },
+              { "metadataTechnicalName": "PrintRunCalculationNumber" },
+              { "metadataTechnicalName": "PrintRunSupplyPriceWithVAT" },
+              { "metadataTechnicalName": "PrintRunProductionCopies" },
+              { "metadataTechnicalName": "PrintRunProductionRollingPrintRun" },
+              { "metadataTechnicalName": "PrintRunProductionRollingPrintRunMinStock" }
+            ],
+            "phaseScopeNodes": [
+              { "phaseTechnicalName": "PrintRunDraft" },
+              { "phaseTechnicalName": "PrintRunPublished" }
+            ]
+          }
+        }
+      ],
+      "metadataScopeNodes": [
+        { "metadataTechnicalName": "ProductApprovedIdeaCalculation" },
+        { "metadataTechnicalName": "ProductContractApproved" },
+        { "metadataTechnicalName": "ProductRightsApproved" },
+        { "metadataTechnicalName": "ProductSendToBOP" },
+        { "metadataTechnicalName": "ProductBOPIsVisibleAndOrderable" },
+        { "metadataTechnicalName": "ProductDisplayOnShops" },
+        { "metadataTechnicalName": "ProductShredRemainingStock" },
+        { "metadataTechnicalName": "WorkRightsStatus" },
+        { "metadataTechnicalName": "ProductISBN13" },
+        { "metadataTechnicalName": "ProductPrintRun" },
+        { "metadataTechnicalName": "ProductEdition" },
+        { "metadataTechnicalName": "ProductTitle" },
+        { "metadataTechnicalName": "ProductSubtitle" },
+        { "metadataTechnicalName": "ProductCollectionPartNumber" },
+        { "metadataTechnicalName": "ProductProjectType" },
+        { "metadataTechnicalName": "ProductImprint" },
+        { "metadataTechnicalName": "ProductLanguageCode" },
+        { "metadataTechnicalName": "RelatedProductOriginalProductTitle" },
+        { "metadataTechnicalName": "RelatedProductOriginalProductLanguageCode" },
+        { "metadataTechnicalName": "RelatedProductOriginalProductPublisher" },
+        { "metadataTechnicalName": "RelatedProductFirstEditionProductTitle" },
+        { "metadataTechnicalName": "RelatedProductFirstEditionProductPublishedDate" },
+        { "metadataTechnicalName": "RelatedProductReplacedEditionISBN" },
+        { "metadataTechnicalName": "RelatedProductReplacedEditionPublishedDate" },
+        { "metadataTechnicalName": "ProductEditorialDivision" },
+        { "metadataTechnicalName": "ProductEditorialResponsible" },
+        { "metadataTechnicalName": "ProductProductionResponsible" },
+        { "metadataTechnicalName": "ProductMarketingResponsible" },
+        { "metadataTechnicalName": "ProductContactResponsible" },
+        { "metadataTechnicalName": "ProductMediaMaterialeType" },
+        { "metadataTechnicalName": "ProductMeasurementWidth" },
+        { "metadataTechnicalName": "ProductMeasurementHeight" },
+        { "metadataTechnicalName": "ProductMeasurementThickness" },
+        { "metadataTechnicalName": "ProductExtentTotalPageCount" },
+        { "metadataTechnicalName": "ProductNoExtentTypeRequired" },
+        { "metadataTechnicalName": "ProductExtentDuration" },
+        { "metadataTechnicalName": "ProductExtentTotalContentPageCount" },
+        { "metadataTechnicalName": "ProductProductionPrintOnDemand" },
+        { "metadataTechnicalName": "ProductPartCount" },
+        { "metadataTechnicalName": "ProductCoverImage" },
+        { "metadataTechnicalName": "ProductSubjectCodeMain" },
+        { "metadataTechnicalName": "ProductSubjectCode" },
+        { "metadataTechnicalName": "ProductBOPBookstoreClassification" },
+        { "metadataTechnicalName": "ProductGUInternetSubject" },
+        { "metadataTechnicalName": "ProductAudienceRange" },
+        { "metadataTechnicalName": "ProductEducationSubjectLevel" },
+        { "metadataTechnicalName": "ProductGUProductURL" },
+        { "metadataTechnicalName": "ProductGUSampleURL" },
+        { "metadataTechnicalName": "ProductGUEnableInspectionCopy" },
+        { "metadataTechnicalName": "ProductWebText" },
+        { "metadataTechnicalName": "ProductGyldendalShopText" },
+        { "metadataTechnicalName": "ProductInternalText" },
+        { "metadataTechnicalName": "ProductSupplyPriceWithoutVAT" },
+        { "metadataTechnicalName": "ProductSupplyPriceWithVAT" },
+        { "metadataTechnicalName": "ProductSupplyBasisOfCalculation" },
+        { "metadataTechnicalName": "ProductSupplyDiscountCode" },
+        { "metadataTechnicalName": "ProductPublishedQuarter" },
+        { "metadataTechnicalName": "ProductPublishedDate" },
+        { "metadataTechnicalName": "ProductProductionPrintRunCopies" },
+        { "metadataTechnicalName": "ProductProductionFreeSampleCopies" },
+        { "metadataTechnicalName": "ProductAtypicalProduction" },
+        { "metadataTechnicalName": "ProductRightsTransferredTo" },
+        { "metadataTechnicalName": "ProductDecommissionDate" },
+        { "metadataTechnicalName": "ProductSalesRestriction" },
+        { "metadataTechnicalName": "ProductLibraryLendingModel" },
+        { "metadataTechnicalName": "ProductSupplyAvailabilityCode" },
+        { "metadataTechnicalName": "ProductTradeProductSalesTripDate" },
+        { "metadataTechnicalName": "ProductBOPReturnable" },
+        { "metadataTechnicalName": "ProductBOPExchangeable" },
+        { "metadataTechnicalName": "ProductContributor" },
+        { "metadataTechnicalName": "ProductFunding" },
+        { "metadataTechnicalName": "ProductBusinessIntelligenceTrackingTaxonomies" },
+        { "metadataTechnicalName": "ProductBusinessIntelligenceTrackingTags" }
+      ],
+      "phaseScopeNodes": [
+        { "phaseTechnicalName": "Published" },
+        { "phaseTechnicalName": "Termination" }
+      ]
+    }
+  }
+}

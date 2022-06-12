@@ -1,0 +1,14 @@
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.deps.json
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Common.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Domain.Contracts.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.csproj.AssemblyReference.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.AssemblyInfoInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.AssemblyInfo.cs
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.csproj.CoreCompileInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.csproj.CopyComplete
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Infrastructure.MongoContracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Infrastructure.MongoContracts.pdb

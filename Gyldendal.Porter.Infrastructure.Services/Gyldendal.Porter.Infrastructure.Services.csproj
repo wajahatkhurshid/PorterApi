@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.5.1" />
+    <PackageReference Include="Microsoft.Azure.Management.ServiceBus" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gyldendal.Porter.Domain.Contracts\Gyldendal.Porter.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Infrastructure.ExternalClients\Gyldendal.Porter.Infrastructure.ExternalClients.csproj" />
+    <ProjectReference Include="..\Gyldendal.Porter.Infrastructure.Repository\Gyldendal.Porter.Infrastructure.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

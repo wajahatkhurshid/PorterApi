@@ -1,0 +1,9 @@
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\bin\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.deps.json
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\bin\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\bin\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\obj\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.csproj.AssemblyReference.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\obj\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.AssemblyInfoInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\obj\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.AssemblyInfo.cs
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\obj\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.csproj.CoreCompileInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\obj\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.SolrMonitoring\obj\Debug\netcoreapp3.1\Gyldendal.Porter.SolrMonitoring.pdb

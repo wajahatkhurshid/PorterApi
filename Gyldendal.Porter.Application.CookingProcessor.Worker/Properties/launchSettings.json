@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Gyldendal.Porter.Application.CookingProcessor.Worker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

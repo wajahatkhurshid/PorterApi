@@ -1,0 +1,9 @@
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.deps.json
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\bin\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.pdb
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.csproj.AssemblyReference.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.AssemblyInfoInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.AssemblyInfo.cs
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.dll
+D:\Wajahat\PorterApi\src\Gyldendal.Porter.Api\Gyldendal.Porter.Application.Contracts\obj\Debug\netcoreapp3.1\Gyldendal.Porter.Application.Contracts.pdb

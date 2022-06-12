@@ -1,0 +1,9 @@
+{
+  "commandDto": {
+    "name": "",
+    "description": "Porter subscriber for webshop data",
+    "endPointURL": "",
+    "offsetDate": "2000-09-01T12:28:28.923Z",
+    "suspended": false
+  }
+}
